@@ -1,4 +1,6 @@
 import TodoItems from "./TodoItems";
+import { MdDeleteSweep } from "react-icons/md";
+
 
 function TodoItem({ todoName, todoDate, onDeleteClick }) {
     return (
@@ -12,7 +14,8 @@ function TodoItem({ todoName, todoDate, onDeleteClick }) {
               className="btn btn-danger kg-button"
               onClick={() => onDeleteClick(todoName)}
             >
-              Delete
+              <MdDeleteSweep />
+
             </button>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { MdAddComment } from "react-icons/md";
+
 
 export default function Add_Todo({ onNewItem }) {
 
@@ -32,7 +34,8 @@ export default function Add_Todo({ onNewItem }) {
                 <input className='taskdate'  type="date" value = {itemDate} onChange={handleItemDate}/>
             </div>
             <div className="col-2">
-                <button type="button" className="btn btn-outline-success" onClick={handleAddCliked}>ADD</button>
+                <button type="button" className="btn btn-outline-success" onClick={handleAddCliked}><MdAddComment />
+                </button>
             </div>
         </div>
         </div>);
